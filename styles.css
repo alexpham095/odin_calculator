@@ -1,0 +1,147 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Roboto", Helvetica, sans-serif;
+	border: none;
+}
+
+body {
+	background-color: rgb(2, 59, 50);
+}
+
+#container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display:grid;
+  box-shadow: 0 0 35px #17181c;
+  background-color: black;
+  border: 2px solid #18867B;
+  width: max-content;
+  margin: 0 auto;
+  padding: 15px;
+  justify-content: center;
+  grid-gap:10px;
+  border-radius: 10px;
+  grid-template-areas:
+    "ans ans ans ans"
+    "ac bck bck div"
+		"seven eight nine mult"
+		"four five six subt"
+		"one two three sum"
+		"deci zero zero equals ";
+}
+
+#display {
+  height: 80px;
+	border-radius: 3px;
+	padding: 0 5px;
+  grid-area: ans;
+  font-size: 37px;
+  background-color: black;
+  text-align: right;
+	color: white;
+}
+
+.btn {
+  background-color: rgb(129, 129, 129);
+  border: 1px solid rgb(129, 129, 129);
+  border-radius: 30px;
+  padding: 5px 10px;
+  height: 70px;
+  min-width: 70px;
+  font-size:23px;
+  color: #D7D5CC;
+  outline: none;
+}
+
+.nums {
+  background-color: rgb(56, 55, 55);
+  border: 1px solid rgb(56, 55, 55);
+}
+
+.btn:hover {
+  background-color: rgb(155, 153, 153);
+}
+
+.ops {
+  background-color: #18867B;
+  border: 1px solid #18867B;
+}
+
+.ops:hover {
+  background-color: rgb(57, 160, 150);
+}
+
+#ac {
+  grid-area: ac;
+}
+
+#back {
+  grid-area: bck;
+}
+
+#mult {
+	grid-area: mult;
+}
+
+#div {
+	grid-area: div;
+}
+
+#subt {
+	grid-area: subt;
+}
+
+#sum {
+	grid-area: sum;
+}
+
+#deci {
+	grid-area: deci;
+}
+
+#equals {
+	grid-area: equals;
+}
+
+#zero {
+	grid-area: zero;
+}
+
+#one {
+	grid-area: one;
+}
+
+#two {
+	grid-area: two;
+}
+
+#three {
+	grid-area: three;
+}
+
+#four {
+	grid-area: four;
+}
+
+#five {
+	grid-area: five;
+}
+
+#six {
+	grid-area: six;
+}
+
+#seven {
+	grid-area: seven;
+}
+
+#eight {
+	grid-area: eight;
+}
+
+#nine {
+	grid-area: nine;
+}
